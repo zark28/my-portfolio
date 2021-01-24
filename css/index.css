@@ -1,0 +1,71 @@
+
+header{
+    width: 85%;
+    margin: 0 auto;
+}
+.my-pic{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+/* Navigation */
+nav{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 1.4rem;
+}
+
+/* nav li a{
+    color: var(--tetiaryColor);
+} */
+
+.active{
+    color: var(--secondaryColor);
+}
+
+/* Header content */
+.heading{
+    /* background-color: aqua; */
+    width: fit-content;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translatey(-50%);
+}
+
+.heading p{
+    padding-left: 4rem;
+}
+
+.heading span{
+    color: var(--secondaryColor);
+}
+
+/* Head footer */
+
+.socials-container{
+    position: absolute;
+    bottom: 2%;
+    left: 3rem;
+    width: 20%;
+    color: var(--tetiaryColor);
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: 800;
+}
+

@@ -1,0 +1,394 @@
+
+.heading.about h1{
+    text-align: end;
+}
+
+.my-pic.about{
+    left: 50%;
+    transform: translateX(-20%);
+    z-index: 3;
+} 
+
+.pic-bar{
+    position: absolute;
+    height: 5rem;
+    background-color: black;
+    z-index: 1;
+}
+
+.bar1{
+    width: 64%;
+    bottom: 5%;
+    left: -9%;
+}
+
+.bar2{
+    width: 50%;
+    bottom: 20%;
+    right: -9%;
+}
+
+/* Bio section */
+
+.bio-container{
+    width: 85%;
+    margin: 0 auto;
+    /* border: black solid .5rem; */
+}
+
+.bio-container h2{
+    color: var(--secondaryColor);
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+}
+
+.about-me-container{
+    height: fit-content;
+}
+
+.about-me-container >h2{
+    padding: 1rem;
+    border-bottom: .1rem var(--secondaryColor) solid;
+}
+
+.who-am-i{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.my-paragraph{
+    padding: 1rem .5rem .5rem .5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    width: 40rem;
+}
+
+/* my career section */
+
+.my-career-container{
+    margin-top: 10rem;
+}
+
+.my-career-container h2{
+    padding: 1rem;
+}
+
+.career-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career-line{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 2px;
+    height: 85rem;
+    background-color:var(--secondaryColor);
+    margin: 0 2rem;
+}
+
+.career-line .dots{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: blue; */
+    border:var(--secondaryColor) solid .1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.career-line .dots >span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:var(--secondaryColor);
+
+}
+
+.career-card{
+    position: relative;
+    width: 40rem;
+    margin-bottom: 2rem;
+   
+}
+
+.career-card.text{
+    height: 25rem;
+    padding: 4rem 0 0;
+    /* background-color: aqua; */
+}
+
+h3{
+    display: block;
+    /* background: aqua; */
+    height: fit-content;
+    border-bottom: .1rem var(--tetiaryColor) solid;
+    padding: 1rem 0;
+    margin-bottom:.5rem ;
+}
+
+.date{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.description{
+    line-height:1.5;
+}
+
+.company-logo{
+    width: 100%;
+}
+
+/* My works */
+
+.my-works-container{
+    margin-top: 10rem;
+}
+.my-works h2{
+    padding: 1rem;
+    border-bottom: .1rem var(--secondaryColor) solid;
+}
+
+.works-card{
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.works-card a> img{
+width: 40rem;
+height: 20rem;
+}
+
+.works-card h3{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.works-card > div{
+    line-height: 1;
+}
+
+.works-card >div::before{
+    content: '';
+    display: flex;
+    width: 100px;
+    height: 2px;
+    background-color:var(--tetiaryColor);
+    position: absolute;
+    left: 4%;
+    top: 50%;
+}
+
+
+/* My Blog */
+.blog-container{
+    margin-top: 10rem;
+    position: relative;
+}
+
+.my-blog> h2{
+    padding-bottom: 2rem;
+}
+
+.blog-card{
+    padding: 1rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:4rem;
+    
+}
+
+.card-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-slider > img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+.card-slider >div{
+    width: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.blog-text>*{
+    margin-bottom: 1rem;
+    width: 55%;
+}
+
+
+.blog-text .date{
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    width: fit-content;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem;
+    letter-spacing: 1.5px;
+}
+
+.blog-container .buttons{
+    position: absolute;
+    right: 0%;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blog-text .read{
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    transform: translateX(-50%); 
+    
+}
+
+.blog-text .read > a{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: var(--secondaryColor);
+    padding: 3rem;
+     border: .2rem solid var(--secondaryColor);
+     border-radius: 50%;
+     text-align: center;
+}
+.blog-text .read:hover >a{
+    color: var(--primaryColor);
+     border:none;
+     background: var(--secondaryColor);
+     transition: .3s;
+     
+}
+
+/* Contact Section*/
+.contact-section{
+    margin-top: 10rem;
+    padding:5rem 0; 
+    position: relative;
+    background-color: var(--tetiaryColor);
+}
+
+.contact-container{
+    width: 85%;
+    margin:auto;
+}
+
+.flag{
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background: var(--secondaryColor);
+    width: 8rem;
+    height: 8rem;
+}
+
+.flag img{
+    width: 100%; 
+}
+
+.contact-head{
+    width: 70%;
+}
+
+.contact-head h2{
+    color: var(--primaryColor);
+    padding: 2rem;
+}
+
+.contact-head h2>span{
+    color: var(--secondaryColor);
+}
+
+.form-container{
+    width: 100%;
+}
+
+.form-container .input{
+    display: inline-block;
+    width: fit-content;
+    background-color: inherit;
+    border-bottom: solid .2rem var(--tetiary2Color);
+    width: 25%;
+    padding: .5rem 0;
+    color: var(--tetiary2Color);
+    margin-left:1.5rem;
+    
+}
+
+.input input{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    color: var(--tetiary2Color);
+
+    
+
+} 
+
+.input.user-input{
+    width:35%;
+    margin-bottom:2rem;
+}
+
+/* footer */
+
+.footer{
+    position: relative;
+    border-bottom: .5rem solid var(--tetiaryColor);
+    border-radius: 0 15px 15px;
+    padding: 2rem;
+}
+
+.footer main{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer main>a{
+    width: 10rem;
+}
+
+.footer img{
+    width: 100%;
+}
+
+.footer-socials{
+ position: relative;
+}
+
+.footer-socials a{
+    color: var(--tetiary2Color);
+
+}
