@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    /* transition: all .5s ease-in-out ; */
 }
 
 body{
@@ -49,3 +50,38 @@ section{
     width: 100vw;
     scroll-behavior: smooth;
 }
+
+.humberger{
+    display: none;
+    width: 8rem;
+    height: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;    
+    outline: none;  
+    padding: .2rem 0; 
+}
+
+.h-bar,.h-bar::before,.h-bar::after{
+    width: 100%;
+    height: .4rem;
+    background-color: rgb(14, 44, 44); 
+}
+.h-bar::before,.h-bar::after{
+    display: block;
+    content: '';
+    position: absolute;
+}
+.h-bar::after{
+    bottom: 0%;
+}
+
+.h-bar::before{
+    top: 2%;
+}
+
+.h-bar::after{
+    
+}
+
